@@ -9,6 +9,21 @@ const model = ref([
         items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' }]
     },
     {
+    label: 'Meta Ads',
+    icon: 'pi pi-facebook',
+    to: '/meta',
+    items: [
+        { label: 'Consultar Campañas', icon: 'pi pi-chart-bar', to: '/meta/campaigns' },
+        { label: 'Crear Campaña', icon: 'pi pi-send', to: '/meta/optimize' },
+        // { label: 'Publicar', icon: 'pi pi-send', to: '/meta/post' },
+        { label: 'Login', icon: 'pi pi-fw pi-sign-in', to: '/auth/login'},
+        
+        ]
+     },
+     
+     /*
+     
+     {
         label: 'UI Components',
         items: [
             { label: 'Form Layout', icon: 'pi pi-fw pi-id-card', to: '/uikit/formlayout' },
@@ -28,6 +43,8 @@ const model = ref([
             { label: 'Misc', icon: 'pi pi-fw pi-circle', to: '/uikit/misc' }
         ]
     },
+    
+
     {
         label: 'Pages',
         icon: 'pi pi-fw pi-briefcase',
@@ -135,7 +152,7 @@ const model = ref([
                 target: '_blank'
             }
         ]
-    }
+    } */
 ]);
 </script>
 

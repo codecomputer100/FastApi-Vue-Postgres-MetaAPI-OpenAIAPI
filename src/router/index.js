@@ -103,7 +103,29 @@ const router = createRouter({
                     path: '/documentation',
                     name: 'documentation',
                     component: () => import('@/views/pages/Documentation.vue')
-                }
+                },
+                 {
+                    path: '/meta/campaigns',
+                    name: 'meta-campaigns',
+                    component: () => import('@/views/meta/CampaignsView.vue')
+                },
+
+                {
+                    path: "/meta/performance/:id",
+                    name: "Performance",
+                    component: () => import("@/views/meta/CampaignPerformanceView.vue"),
+                    },
+                {
+                    path: '/meta/optimize',
+                    name: 'CampaignOptimizer',
+                    component: () => import('@/views/meta/CampaignOptimizerView.vue')
+                    },
+                {
+                    path: '/auth/login',
+                    name: 'login',
+                    component: () => import('@/views/pages/auth/Login.vue')
+                    },
+   
             ]
         },
         {
@@ -117,11 +139,7 @@ const router = createRouter({
             component: () => import('@/views/pages/NotFound.vue')
         },
 
-        {
-            path: '/auth/login',
-            name: 'login',
-            component: () => import('@/views/pages/auth/Login.vue')
-        },
+
         {
             path: '/auth/access',
             name: 'accessDenied',
@@ -131,7 +149,9 @@ const router = createRouter({
             path: '/auth/error',
             name: 'error',
             component: () => import('@/views/pages/auth/Error.vue')
-        }
+        },
+       
+
     ]
 });
 
